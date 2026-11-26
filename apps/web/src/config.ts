@@ -1,9 +1,9 @@
 // Único lugar con las URLs públicas. Edita estas líneas.
 export const CONFIG = {
   /** Repositorio en GitHub (placeholder: cámbialo por el tuyo). */
-  repoUrl: 'https://github.com/tu-usuario/kaizer',
+  repoUrl: 'https://github.com/Kaiserrq/kaizer',
   /** Instalador de Windows en GitHub Releases (placeholder editable). */
-  windowsUrl: 'https://github.com/tu-usuario/kaizer/releases/latest/download/KAIZER-Setup.exe',
+  windowsUrl: 'https://github.com/Kaiserrq/kaizer/releases/latest/download/KAIZER-Setup.exe',
   /** APK de Android. Se sirve desde public/downloads cuando exista. */
   androidUrl: '/downloads/kaizer.apk'
 }
