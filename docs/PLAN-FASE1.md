@@ -13,7 +13,7 @@ Objetivo: proyecto de portafolio que funcione perfecto en una demo en vivo.
 
 ## Cerebro (proveedor LLM) — `packages/core/src/providers`
 - Interfaz `LLMProvider.chat(system, messages, tools) -> { text, toolCalls }` con una sola implementación (Gemini); la interfaz se mantiene para poder cambiar de proveedor más adelante.
-- **Gemini** (por defecto) con `@google/genai`, function calling. Modelo configurable (por defecto `gemini-2.5-flash`).
+- **Gemini** (por defecto) con `@google/genai`, function calling. Modelo configurable (por defecto `gemini-3.8-flash`).
 - Sin dependencias externas: no hay Ollama ni modelos locales.
 - Bucle del agente: máx. 5 rondas de herramientas por petición; system prompt en español, personalidad KAIZER (sobrio, preciso, respuestas cortas, trata al usuario de "tú").
 - La API key la escribe el usuario en Ajustes; en desktop se cifra con `safeStorage`. Nunca se versiona.

@@ -19,7 +19,7 @@ function mapGeminiError(e: unknown): KaizerError {
     return new KaizerError('Gemini rechazó tu API key. Revísala en Ajustes y vuelve a guardarla.')
   }
   if (status === 404) {
-    return new KaizerError('Gemini no encontró ese modelo. Cambia el modelo en Ajustes (por ejemplo gemini-2.5-flash).')
+    return new KaizerError('Gemini no encontró ese modelo. Cambia el modelo en Ajustes (por ejemplo gemini-3.8-flash).')
   }
   if (status === 429) {
     return new KaizerError('Gemini alcanzó su límite de uso. Espera un minuto e inténtalo de nuevo, o cambia de modelo en Ajustes.')

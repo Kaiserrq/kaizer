@@ -23,7 +23,7 @@ export interface SettingsPatch extends Partial<Settings> {
 }
 
 export const DEFAULT_SETTINGS: Settings = {
-  geminiModel: 'gemini-2.5-flash',
+  geminiModel: 'gemini-3.8-flash',
   browser: 'brave',
   voiceEnabled: true,
   autoStart: false

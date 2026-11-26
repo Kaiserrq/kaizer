@@ -4,7 +4,7 @@ import type { ChatMessage, ToolCall } from '../../../../packages/core/src/index'
 
 /** Límites fijados en el servidor. El cliente no puede cambiarlos. */
 export const LIMITS = {
-  model: 'gemini-2.5-flash',
+  model: 'gemini-3.8-flash',
   maxMessages: 20,
   maxChars: 1000,
   maxBodyBytes: 100_000,
