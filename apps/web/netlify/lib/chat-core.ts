@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
-import { GeminiProvider, KaizerError, WEB_TOOL_NAMES, buildSystemPrompt, webToolSchemas } from '@kaizer/core'
-import type { ChatMessage, ToolCall } from '@kaizer/core'
+import { GeminiProvider, KaizerError, WEB_TOOL_NAMES, buildSystemPrompt, webToolSchemas } from '../../../../packages/core/src/index'
+import type { ChatMessage, ToolCall } from '../../../../packages/core/src/index'
 
 /** Límites fijados en el servidor. El cliente no puede cambiarlos. */
 export const LIMITS = {
