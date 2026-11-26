@@ -191,6 +191,14 @@ export async function handleChat(req: Request, deps: ChatDeps): Promise<Response
     return json(200, reply)
   } catch (e) {
     console.error('[kaizer] gemini:', e)
-    return fail(502, 'KAIZER no pudo responder. Intenta de nuevo en un momento.')
+    // Solo la categoría del fallo (sin detalles) para poder diagnosticar desde fuera.
+    const m = e instanceof Error ? e.message : ''
+    const code = /API key/i.test(m) ? 'gemini_key'
+      : /modelo/i.test(m) ? 'gemini_model'
+      : /límite/i.test(m) ? 'gemini_quota'
+      : /no está disponible/i.test(m) ? 'gemini_down'
+      : /conectar/i.test(m) ? 'gemini_network'
+      : 'gemini_other'
+    return fail(502, 'KAIZER no pudo responder. Intenta de nuevo en un momento.', code)
   }
 }
