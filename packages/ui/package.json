@@ -1,0 +1,18 @@
+{
+  "name": "@kaizer/ui",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./forge": "./src/components/ForgeCore.tsx"
+  },
+  "dependencies": {
+    "@fontsource/hanken-grotesk": "^5.3.0",
+    "@fontsource/unbounded": "^5.3.0"
+  }
+}

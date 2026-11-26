@@ -1,0 +1,11 @@
+node_modules/
+out/
+dist/
+release/
+.env*
+!.env.example
+*.log
+# Sesión de WhatsApp y datos locales
+whatsapp-auth/
+auth_info*/
+apikey.bin

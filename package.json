@@ -1,0 +1,29 @@
+{
+  "name": "kaizer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "KAIZER, asistente virtual personal",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:desktop": "npm run dev -w @kaizer/desktop",
+    "dev:web": "npm run dev -w @kaizer/web",
+    "build": "npm run typecheck && npm run build -w @kaizer/desktop && npm run build -w @kaizer/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dist": "npm run dist -w @kaizer/desktop"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "@whiskeysockets/baileys@7.0.0-rc14": true,
+    "electron-winstaller@5.4.0": true,
+    "onnxruntime-node@1.30.0": true,
+    "protobufjs@7.6.6": true
+  }
+}
