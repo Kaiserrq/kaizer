@@ -17,3 +17,4 @@ nsis:
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
   shortcutName: KAIZER
+  artifactName: KAIZER-Setup.${ext}
